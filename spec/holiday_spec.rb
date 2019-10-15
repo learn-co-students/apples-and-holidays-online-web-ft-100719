@@ -20,14 +20,7 @@ describe "holiday_supplies_hash" do
 
  # Question 1
  # Write a method that returns the second supply for the Fourth of July
-  describe "#second_supply_for_fourth_of_july" do
-    it "returns the string 'BBQ' without hardcoding it" do
-      expect(second_supply_for_fourth_of_july(holiday_supplies)).to eq("BBQ")
-      holiday_supplies[:summer][:fourth_of_july][1] = "Watermelon"
-      expect(second_supply_for_fourth_of_july(holiday_supplies)).to eq("Watermelon")
-    end
-  end
-
+describe
   # Question 2
   # Write a method that adds a supply to all Winter holidays
   describe "#add_supply_to_winter_holidays" do
