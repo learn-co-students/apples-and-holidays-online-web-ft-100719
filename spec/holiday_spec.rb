@@ -1,3 +1,5 @@
+require 'pry'
+
 describe "holiday_supplies_hash" do
 # Hash of seasons, the holidays in them, and some items each holiday might have.
   let(:holiday_supplies) {
@@ -32,6 +34,7 @@ describe "holiday_supplies_hash" do
   # Write a method that adds a supply to all Winter holidays
   describe "#add_supply_to_winter_holidays" do
     it "iterates through winter holidays adds a supply to each one" do
+      # binding.pry
       add_supply_to_winter_holidays(holiday_supplies, "Balloons")
       expect(holiday_supplies[:winter][:christmas]).to include("Balloons")
       expect(holiday_supplies[:winter][:new_years]).to include("Balloons")
